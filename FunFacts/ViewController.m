@@ -16,12 +16,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.factBook = [[FactBook alloc] init];
+    
+    self.funFactLabel.text = [self.factBook randomFact];
+    self.colorwheel = [[ColorWheel alloc]init];
+    
+    UIColor * screenColor = [self.colorwheel randomColor];
+    
+    self.view.backgroundColor = screenColor;
+    self.funFactButton.tintColor = screenColor;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)showFunFact {
+    
+    UIColor * screenColor = [self.colorwheel randomColor];
+    
+    //Generate a random number to randomize the fact that is displayed.
+    self.funFactLabel.text = [self.factBook randomFact];
+    self.view.backgroundColor = screenColor;
+    self.funFactButton.tintColor = screenColor;
+
+    
+    
 }
 
 @end

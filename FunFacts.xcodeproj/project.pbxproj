@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D345CBE1CA1A513000FEAA5 /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D345CBD1CA1A513000FEAA5 /* FactBook.m */; settings = {ASSET_TAGS = (); }; };
+		4D7846641CAD5BBD00757CEE /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7846631CAD5BBD00757CEE /* ColorWheel.m */; settings = {ASSET_TAGS = (); }; };
 		4DFC942D1CA0506F0055909A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC942C1CA0506F0055909A /* main.m */; };
 		4DFC94301CA0506F0055909A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC942F1CA0506F0055909A /* AppDelegate.m */; };
 		4DFC94331CA0506F0055909A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC94321CA0506F0055909A /* ViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D345CBC1CA1A513000FEAA5 /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactBook.h; sourceTree = "<group>"; };
+		4D345CBD1CA1A513000FEAA5 /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactBook.m; sourceTree = "<group>"; };
+		4D7846621CAD5BBD00757CEE /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorWheel.h; path = ../ColorWheel.h; sourceTree = "<group>"; };
+		4D7846631CAD5BBD00757CEE /* ColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorWheel.m; path = ../ColorWheel.m; sourceTree = "<group>"; };
 		4DFC94281CA0506F0055909A /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFC942C1CA0506F0055909A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4DFC942E1CA0506F0055909A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,10 +107,14 @@
 		4DFC942A1CA0506F0055909A /* FunFacts */ = {
 			isa = PBXGroup;
 			children = (
+				4D7846621CAD5BBD00757CEE /* ColorWheel.h */,
+				4D7846631CAD5BBD00757CEE /* ColorWheel.m */,
 				4DFC942E1CA0506F0055909A /* AppDelegate.h */,
 				4DFC942F1CA0506F0055909A /* AppDelegate.m */,
 				4DFC94311CA0506F0055909A /* ViewController.h */,
 				4DFC94321CA0506F0055909A /* ViewController.m */,
+				4D345CBC1CA1A513000FEAA5 /* FactBook.h */,
+				4D345CBD1CA1A513000FEAA5 /* FactBook.m */,
 				4DFC94341CA0506F0055909A /* Main.storyboard */,
 				4DFC94371CA0506F0055909A /* Assets.xcassets */,
 				4DFC94391CA0506F0055909A /* LaunchScreen.storyboard */,
@@ -207,6 +217,7 @@
 				TargetAttributes = {
 					4DFC94271CA0506F0055909A = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 5H9QMETUU8;
 					};
 					4DFC94401CA0506F0055909A = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -272,7 +283,9 @@
 			files = (
 				4DFC94331CA0506F0055909A /* ViewController.m in Sources */,
 				4DFC94301CA0506F0055909A /* AppDelegate.m in Sources */,
+				4D345CBE1CA1A513000FEAA5 /* FactBook.m in Sources */,
 				4DFC942D1CA0506F0055909A /* main.m in Sources */,
+				4D7846641CAD5BBD00757CEE /* ColorWheel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrmaakun.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrmaakun.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +515,7 @@
 				4DFC94571CA0506F0055909A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DFC94581CA0506F0055909A /* Build configuration list for PBXNativeTarget "FunFactsTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +524,7 @@
 				4DFC945A1CA0506F0055909A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DFC945B1CA0506F0055909A /* Build configuration list for PBXNativeTarget "FunFactsUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +533,7 @@
 				4DFC945D1CA0506F0055909A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
